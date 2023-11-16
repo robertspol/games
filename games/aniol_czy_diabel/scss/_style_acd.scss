@@ -1,0 +1,211 @@
+@font-face {
+    font-family: FontdinerSwanky;
+    src: url('../fonts/Fontdiner_Swanky/FontdinerSwanky-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        min-height: 85vh;
+    }
+}
+
+.title {
+    margin: 3vh 0;
+    font-family: FontdinerSwanky;
+    font-size: 3vh;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include mq(xxsmall) {
+        font-size: 5vh;
+    }
+
+    .title__angels {
+        color: #00f;
+    }
+
+    .title__demons {
+        color: #f00;
+    }
+}
+
+.text {
+    margin-bottom: 3vh;
+    font-size: 2vh;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include mq(xxsmall) {
+        font-size: 3vh;
+    }
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mq(xxsmall-landscape) {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    img {
+        width: 20vh;
+        height: 20vh;
+        cursor: pointer;
+
+        @include mq(xsmall) {
+            width: 30vh;
+            height: 30vh;
+        }
+
+        @include mq(xsmall-landscape) {
+            width: 40vh;
+            height: 40vh;
+        }
+    }
+
+    .doubts {
+        width: 30vh;
+
+        @include mq(xsmall) {
+            width: 40vh;
+            height: 30vh;
+        }
+
+        @include mq(xsmall-landscape) {
+            width: 60vh;
+            height: 40vh;
+        }
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        color: #fff;
+    }
+
+    @include mq(xxsmall-landscape) {
+        flex-direction: row;
+        margin: 2vh 0;
+    }
+
+    button {
+        display: block;
+        margin-top: 1vh;
+        padding: .5vh .5vw;
+        background-color: #fff;
+        color: #000;
+        font-size: 2.5vh;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: none;
+        transition: .2s;
+        cursor: pointer;
+
+        &:hover {
+            color: #fff;
+        }
+
+        @include mq(xxsmall-landscape) {
+            margin-right: 2vh;
+            padding: 1vh 1vw;
+            font-size: 31
+        }
+    }
+
+    .buttons__play:hover {
+        background-color: #0f0;
+    }
+
+    .buttons__reset:hover {
+        background-color: #f00;
+    }
+
+    .buttons__save:hover {
+        background-color: #00f;
+    }
+
+    .buttons__out:hover {
+        background-color: purple;
+    }
+
+    .buttons__play.play-clicked {
+        background-color: #0f0;
+        color: #fff;
+    }
+}
+
+.info {
+    @include mq(xxsmall-landscape) {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .results {
+        .results__text {
+            margin: 1vh 0;
+            text-transform: uppercase;
+
+            @include mq(xxsmall) {
+                font-size: 3.5vh;
+            }
+        }
+
+        .results__text--choices {
+            margin-top: 2vh;
+
+            @include mq(xxsmall-landscape) {
+                margin-top: 1vh;
+            }
+        }
+
+        .results__wrapper {
+            width: 50vh;
+
+            @include mq(xxsmall) {
+                font-size: 3vh;
+            }
+        }
+    }
+}
+
+.final-text {
+    position: absolute;
+    left: 50vw;
+    top: 50vh;
+    padding: 1vh 2vh;
+    background-color: rgba(20, 20, 20, .6);
+    font-size: 3vh;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 2vh;
+    transform: translate(-50%, -50%);
+
+    &__you {
+        color: #0f0;
+    }
+
+    &__comp {
+        color: orangered;
+    }
+}

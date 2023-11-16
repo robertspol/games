@@ -1,0 +1,30 @@
+@mixin wallpaper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    z-index: -100;
+}
+
+@mixin button {
+    padding: .5vh 1vh;
+    background-color: #000;
+    color: #0f0;
+    border: .5vh #0f0 solid;
+    border-radius: 2vh;
+    cursor: pointer;
+
+    @include mq(xxsmall) {
+        font-size: 3vh;
+    }
+
+    @include mq(xxsmall-landscape) {
+        font-size: 4vh;
+    }
+
+    @include mq(medium-landscape) {
+        font-size: 3vh;
+    }
+}

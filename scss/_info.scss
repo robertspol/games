@@ -1,0 +1,54 @@
+body {
+    height: 100vh;
+    background-color: black;
+}
+
+.info-wrapper {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 2vh;
+    font-size: 2vh;
+
+    @include mq(xxsmall-landscape) {
+        font-size: 4vh;
+    }
+
+    @include mq(small-landscape) {
+        font-size: 3vh;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .link-start-wrapper {
+        margin-top: 4vh;
+        text-align: center;
+
+        a {
+            @include button;
+            text-decoration: none;
+        }
+    }
+}
+
+.kr-rules {
+    ul {
+        list-style-position: inside;
+        margin: 2vh 0;
+    }
+}
+
+.acd-rules,
+.kr-rules {
+    margin-top: 2vh;
+
+    .name {
+        margin-bottom: 1vh;
+        color: red;
+    }
+
+    li {
+        margin-bottom: 2vh;
+    }
+}

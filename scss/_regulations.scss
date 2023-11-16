@@ -1,0 +1,42 @@
+body {
+    height: 100vh;
+    background-color: black;
+}
+
+.regulations-wrapper {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 2vh;
+    font-size: 2vh;
+
+    @include mq(xxsmall-landscape) {
+        font-size: 4vh;
+    }
+
+    @include mq(small-landscape) {
+        font-size: 3vh;
+    }
+
+    h1 {
+        margin-bottom: 2vh;
+        text-align: center;
+    }
+
+    ul {
+        list-style-position: inside;
+
+        li {
+            margin-bottom: 2vh;
+        }
+    }
+
+    .link-start-wrapper {
+        margin-top: 4vh;
+        text-align: center;
+
+        a {
+            @include button;
+            text-decoration: none;
+        }
+    }
+}

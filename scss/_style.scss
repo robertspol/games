@@ -1,0 +1,218 @@
+@font-face {
+    font-family: Cinzel;
+    src: url('../fonts/Cinzel/Cinzel-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wallpaper {
+    @include wallpaper;
+    background-image: url('../img/portrait/leaves_480.jpg');
+
+    @include mq(xxsmall-landscape) {
+        background-image: url('../img/landscape/cabbage_640.jpg');
+    }
+
+    @include mq(medium) {
+        background-image: url('../img/portrait/leaves_960.jpg');
+    }
+
+    @include mq(medium-landscape) {
+        background-image: url('../img/landscape/cabbage_1280.jpg');
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+
+        .logging-wrapper,
+        .pass-wrapper,
+        .input-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            label {
+                margin-bottom: .3vh;
+
+                @include mq(xxsmall) {
+                    font-size: 3vh;
+                }
+
+                @include mq(large-landscape) {
+                    font-size: 4vh;
+                }
+            }
+
+            input {
+                padding: 0 1vh;
+                border: none;
+                border-radius: 5px;
+                outline: none;
+
+                @include mq(xxsmall) {
+                    font-size: 3vh;
+                }
+
+                @include mq(small) {
+                    height: 3vh;
+                    font-size: 2vh;
+                }
+
+                @include mq(small-landscape) {
+                    height: 5vh;
+                    font-size: 3vh;
+                }
+            }
+        }
+
+        .logging-wrapper {
+            margin-bottom: 2vh;
+        }
+
+
+        .pass-wrapper2 {
+            margin-bottom: 4vh;
+        }
+
+        .regulations-wrapper {
+            flex-direction: row;
+            justify-content: center;
+
+            input {
+                width: 2vh;
+                height: 2vh;
+                margin-left: 1vh;
+
+                @include mq(small) {
+                    width: 3vh;
+                    height: 3vh;
+                }
+            }
+        }
+
+        .submit-logging {
+            @include button;
+        }
+
+        .submit-registration {
+            @include button;
+            color: yellow;
+            border: .5vh yellow solid;
+        }
+    }
+
+    .link-registration-wrapper {
+        margin-top: 5vh;
+        text-align: center;
+
+        a {
+            background-color: #000;
+            color: yellow;
+            padding: .5vh 1vh;
+            font-size: 4vh;
+            text-decoration: none;
+            border: .6vh solid yellow;
+            border-radius: 2vh;
+
+            @include mq(small-landscape) {
+                font-size: 6vh;
+            }
+        }
+    }
+
+    .link-start-wrapper {
+        text-align: center;
+
+        a {
+            @include button;
+            text-decoration: none;
+        }
+    }
+
+    .text {
+        width: 90%;
+        margin: 0 auto;
+        font-family: Cinzel;
+        font-size: 3vh;
+        text-align: center;
+
+        @include mq(xxsmall-landscape) {
+            width: 70%;
+        }
+
+        @include mq(small) {
+            font-size: 4vh;
+        }
+    }
+
+    .info-wrapper {
+        text-align: center;
+
+        a {
+            @include button;
+            color: #00f;
+            border: .5vh #00f solid;
+            text-decoration: none;
+        }
+    }
+}
+
+.error-registration-wrapper,
+.error-logging-wrapper {
+    height: 4vh;
+
+    p {
+        color: #f00;
+    }
+
+    @include mq(small) {
+        font-size: 2vh;
+    }
+
+
+    @include mq(small-landscape) {
+        font-size: 3vh;
+    }
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: center;
+
+    .link-regulations-wrapper {
+        margin-left: 5vh;
+
+        @include mq(xxsmall-landscape) {
+            margin-left: 20vh;
+        }
+
+        a {
+            @include button;
+            color: #00f;
+            border: .5vh #00f solid;
+            text-decoration: none;
+        }
+    }
+}
