@@ -5,8 +5,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -41,70 +40,47 @@ body {
 }
 
 .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-evenly;
   height: 100vh;
 }
 .wrapper form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   margin: 0 auto;
   width: 100%;
 }
-.wrapper form .logging-wrapper,
+.wrapper form .sign-in-wrapper,
 .wrapper form .pass-wrapper,
 .wrapper form .input-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
-.wrapper form .logging-wrapper label,
+.wrapper form .sign-in-wrapper label,
 .wrapper form .pass-wrapper label,
 .wrapper form .input-wrapper label {
   margin-bottom: 0.3vh;
 }
 @media (min-width: 360px) {
-  .wrapper form .logging-wrapper label,
+  .wrapper form .sign-in-wrapper label,
   .wrapper form .pass-wrapper label,
   .wrapper form .input-wrapper label {
     font-size: 3vh;
   }
 }
 @media (min-width: 1024px) and (orientation: landscape) {
-  .wrapper form .logging-wrapper label,
+  .wrapper form .sign-in-wrapper label,
   .wrapper form .pass-wrapper label,
   .wrapper form .input-wrapper label {
     font-size: 4vh;
   }
 }
-.wrapper form .logging-wrapper input,
+.wrapper form .sign-in-wrapper input,
 .wrapper form .pass-wrapper input,
 .wrapper form .input-wrapper input {
   padding: 0 1vh;
@@ -113,14 +89,14 @@ body {
   outline: none;
 }
 @media (min-width: 360px) {
-  .wrapper form .logging-wrapper input,
+  .wrapper form .sign-in-wrapper input,
   .wrapper form .pass-wrapper input,
   .wrapper form .input-wrapper input {
     font-size: 3vh;
   }
 }
 @media (min-width: 640px) {
-  .wrapper form .logging-wrapper input,
+  .wrapper form .sign-in-wrapper input,
   .wrapper form .pass-wrapper input,
   .wrapper form .input-wrapper input {
     height: 3vh;
@@ -128,27 +104,22 @@ body {
   }
 }
 @media (min-width: 640px) and (orientation: landscape) {
-  .wrapper form .logging-wrapper input,
+  .wrapper form .sign-in-wrapper input,
   .wrapper form .pass-wrapper input,
   .wrapper form .input-wrapper input {
     height: 5vh;
     font-size: 3vh;
   }
 }
-.wrapper form .logging-wrapper {
+.wrapper form .sign-in-wrapper {
   margin-bottom: 2vh;
 }
 .wrapper form .pass-wrapper2 {
   margin-bottom: 4vh;
 }
 .wrapper form .regulations-wrapper {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
 }
 .wrapper form .regulations-wrapper input {
   width: 2vh;
@@ -161,7 +132,7 @@ body {
     height: 3vh;
   }
 }
-.wrapper form .submit-logging {
+.wrapper form .sign-in-submit {
   padding: 0.5vh 1vh;
   background-color: #000;
   color: #0f0;
@@ -170,21 +141,21 @@ body {
   cursor: pointer;
 }
 @media (min-width: 360px) {
-  .wrapper form .submit-logging {
+  .wrapper form .sign-in-submit {
     font-size: 3vh;
   }
 }
 @media (min-width: 360px) and (orientation: landscape) {
-  .wrapper form .submit-logging {
+  .wrapper form .sign-in-submit {
     font-size: 4vh;
   }
 }
 @media (min-width: 800px) and (orientation: landscape) {
-  .wrapper form .submit-logging {
+  .wrapper form .sign-in-submit {
     font-size: 3vh;
   }
 }
-.wrapper form .submit-registration {
+.wrapper form .sign-up-submit {
   padding: 0.5vh 1vh;
   background-color: #000;
   color: #0f0;
@@ -195,25 +166,25 @@ body {
   border: 0.5vh yellow solid;
 }
 @media (min-width: 360px) {
-  .wrapper form .submit-registration {
+  .wrapper form .sign-up-submit {
     font-size: 3vh;
   }
 }
 @media (min-width: 360px) and (orientation: landscape) {
-  .wrapper form .submit-registration {
+  .wrapper form .sign-up-submit {
     font-size: 4vh;
   }
 }
 @media (min-width: 800px) and (orientation: landscape) {
-  .wrapper form .submit-registration {
+  .wrapper form .sign-up-submit {
     font-size: 3vh;
   }
 }
-.wrapper .link-registration-wrapper {
+.wrapper .link-sign-up-wrapper {
   margin-top: 5vh;
   text-align: center;
 }
-.wrapper .link-registration-wrapper a {
+.wrapper .link-sign-up-wrapper a {
   background-color: #000;
   color: yellow;
   padding: 0.5vh 1vh;
@@ -223,7 +194,7 @@ body {
   border-radius: 2vh;
 }
 @media (min-width: 640px) and (orientation: landscape) {
-  .wrapper .link-registration-wrapper a {
+  .wrapper .link-sign-up-wrapper a {
     font-size: 6vh;
   }
 }
@@ -301,34 +272,30 @@ body {
   }
 }
 
-.error-registration-wrapper,
-.error-logging-wrapper {
+.error-sign-up-wrapper,
+.error-sign-in-wrapper {
   height: 4vh;
 }
-.error-registration-wrapper p,
-.error-logging-wrapper p {
+.error-sign-up-wrapper p,
+.error-sign-in-wrapper p {
   color: #f00;
 }
 @media (min-width: 640px) {
-  .error-registration-wrapper,
-  .error-logging-wrapper {
+  .error-sign-up-wrapper,
+  .error-sign-in-wrapper {
     font-size: 2vh;
   }
 }
 @media (min-width: 640px) and (orientation: landscape) {
-  .error-registration-wrapper,
-  .error-logging-wrapper {
+  .error-sign-up-wrapper,
+  .error-sign-in-wrapper {
     font-size: 3vh;
   }
 }
 
 .buttons-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .buttons-wrapper .link-regulations-wrapper {
   margin-left: 5vh;
@@ -528,19 +495,10 @@ body {
 }
 
 .games-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   height: 100vh;
   font-size: 3vh;
   text-align: center;
@@ -569,9 +527,7 @@ body {
   margin-bottom: 3vh;
   left: 0;
   top: 0;
-  -webkit-transform: skew(30deg, 0);
-          transform: skew(30deg, 0);
-  -webkit-transition: 2s;
+  transform: skew(30deg, 0);
   transition: 2s;
   cursor: pointer;
 }
@@ -584,24 +540,20 @@ body {
   font-weight: bolder;
   text-decoration: none;
   border: 1vh solid yellow;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 .games-list ul li a:hover {
-  -webkit-box-shadow: -3vh 3vh 5vh red;
-          box-shadow: -3vh 3vh 5vh red;
+  box-shadow: -3vh 3vh 5vh red;
 }
 .games-list ul li.game-link-clicked {
   left: 500%;
-  -webkit-box-shadow: -3vh 3vh 5vh red;
-          box-shadow: -3vh 3vh 5vh red;
+  box-shadow: -3vh 3vh 5vh red;
 }
 .games-list ul li:hover {
-  -webkit-box-shadow: -3vh 3vh 5vh red;
-          box-shadow: -3vh 3vh 5vh red;
+  box-shadow: -3vh 3vh 5vh red;
 }
 
-.logout-wrapper a {
+.sign-out-wrapper a {
   padding: 0.5vh 1vh;
   background-color: #000;
   color: #0f0;
@@ -611,22 +563,22 @@ body {
   text-decoration: none;
 }
 @media (min-width: 360px) {
-  .logout-wrapper a {
+  .sign-out-wrapper a {
     font-size: 3vh;
   }
 }
 @media (min-width: 360px) and (orientation: landscape) {
-  .logout-wrapper a {
+  .sign-out-wrapper a {
     font-size: 4vh;
   }
 }
 @media (min-width: 800px) and (orientation: landscape) {
-  .logout-wrapper a {
+  .sign-out-wrapper a {
     font-size: 3vh;
   }
 }
 
-.delete-account-wrapper a {
+.unregister-wrapper a {
   padding: 0.5vh 1vh;
   background-color: #000;
   color: #0f0;
@@ -638,17 +590,17 @@ body {
   text-decoration: none;
 }
 @media (min-width: 360px) {
-  .delete-account-wrapper a {
+  .unregister-wrapper a {
     font-size: 3vh;
   }
 }
 @media (min-width: 360px) and (orientation: landscape) {
-  .delete-account-wrapper a {
+  .unregister-wrapper a {
     font-size: 4vh;
   }
 }
 @media (min-width: 800px) and (orientation: landscape) {
-  .delete-account-wrapper a {
+  .unregister-wrapper a {
     font-size: 3vh;
   }
 }
@@ -664,19 +616,10 @@ body {
 
 .welcome-wrapper,
 .delete-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   height: 100vh;
 }
 .welcome-wrapper h1,
@@ -717,11 +660,9 @@ body {
 }
 
 .welcome-wrapper {
-  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(40%, yellow), color-stop(50%, black));
   background-image: linear-gradient(to bottom right, yellow 40%, black 50%);
 }
 
 .delete-wrapper {
-  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(40%, green), color-stop(50%, black));
   background-image: linear-gradient(to bottom right, green 40%, black 50%);
 }/*# sourceMappingURL=index.css.map */

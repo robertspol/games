@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Anioł czy diabeł</title>
+        <link rel="stylesheet" href="./css/index.min.css" />
+    </head>
+
+    <body>
+        <h1 class="title">
+            <span class="title__angels">Anioł </span>czy
+            <span class="title__demons">diabeł</span>
+        </h1>
+
+        <div class="container">
+            <h2 class="text">Kliknij przycisk Let's play i wybierz:</h2>
+
+            <div class="img-container">
+                <img
+                    data-option="angel"
+                    name="anioł"
+                    class="angel"
+                    src="img/angel.jpg"
+                    alt="anioł"
+                />
+                <img
+                    data-option="doubts"
+                    name="wątpliwości..."
+                    class="doubts"
+                    src="img/doubt.jpg"
+                    alt="wątpliwości"
+                />
+                <img
+                    data-option="devil"
+                    name="diabeł"
+                    class="devil"
+                    src="img/devil.jpg"
+                    alt="diabeł"
+                />
+            </div>
+
+            <div class="buttons">
+                <button class="buttons__play">Let's play!</button>
+                <button class="buttons__reset">Reset</button>
+                <button class="buttons__save">Zapisz grę</button>
+                <button class="buttons__out">Wyjdź z gry</button>
+            </div>
+
+            <div class="info">
+                <div class="results">
+                    <p class="results__text results__text--choices">
+                        Wybory graczy
+                    </p>
+
+                    <div class="results__wrapper">
+                        <span>Twój wybór: </span>
+                        <span class="results__your-choice"></span>
+                    </div>
+
+                    <div class="results__wrapper">
+                        <span>Wybór komputera: </span>
+                        <span class="results__computer-choice"></span>
+                        <div class="winner">Zwycięzca gry:</div>
+                    </div>
+                </div>
+
+                <div class="results">
+                    <p class="results__text">Aktualne wyniki</p>
+
+                    <div class="results__wrapper">
+                        <span>Liczba gier: </span>
+                        <span class="results__games-number">0</span>
+                    </div>
+
+                    <div class="results__wrapper">
+                        <span>Wygranych: </span>
+                        <span class="results__wins">0</span>
+                    </div>
+
+                    <div class="results__wrapper">
+                        <span>Przegranych: </span>
+                        <span class="results__failures">0</span>
+                    </div>
+
+                    <div class="results__wrapper">
+                        <span>Remisów: </span>
+                        <span class="results__draws">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>

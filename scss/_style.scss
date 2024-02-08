@@ -1,6 +1,6 @@
 @font-face {
     font-family: Cinzel;
-    src: url('../fonts/Cinzel/Cinzel-VariableFont_wght.ttf');
+    src: url("../fonts/Cinzel/Cinzel-VariableFont_wght.ttf");
 }
 
 * {
@@ -16,18 +16,18 @@ body {
 
 .wallpaper {
     @include wallpaper;
-    background-image: url('../img/portrait/leaves_480.jpg');
+    background-image: url("../img/portrait/leaves_480.jpg");
 
     @include mq(xxsmall-landscape) {
-        background-image: url('../img/landscape/cabbage_640.jpg');
+        background-image: url("../img/landscape/cabbage_640.jpg");
     }
 
     @include mq(medium) {
-        background-image: url('../img/portrait/leaves_960.jpg');
+        background-image: url("../img/portrait/leaves_960.jpg");
     }
 
     @include mq(medium-landscape) {
-        background-image: url('../img/landscape/cabbage_1280.jpg');
+        background-image: url("../img/landscape/cabbage_1280.jpg");
     }
 }
 
@@ -45,7 +45,7 @@ body {
         margin: 0 auto;
         width: 100%;
 
-        .logging-wrapper,
+        .sign-in-wrapper,
         .pass-wrapper,
         .input-wrapper {
             display: flex;
@@ -54,7 +54,7 @@ body {
             text-align: center;
 
             label {
-                margin-bottom: .3vh;
+                margin-bottom: 0.3vh;
 
                 @include mq(xxsmall) {
                     font-size: 3vh;
@@ -87,10 +87,9 @@ body {
             }
         }
 
-        .logging-wrapper {
+        .sign-in-wrapper {
             margin-bottom: 2vh;
         }
-
 
         .pass-wrapper2 {
             margin-bottom: 4vh;
@@ -112,28 +111,28 @@ body {
             }
         }
 
-        .submit-logging {
+        .sign-in-submit {
             @include button;
         }
 
-        .submit-registration {
+        .sign-up-submit {
             @include button;
             color: yellow;
-            border: .5vh yellow solid;
+            border: 0.5vh yellow solid;
         }
     }
 
-    .link-registration-wrapper {
+    .link-sign-up-wrapper {
         margin-top: 5vh;
         text-align: center;
 
         a {
             background-color: #000;
             color: yellow;
-            padding: .5vh 1vh;
+            padding: 0.5vh 1vh;
             font-size: 4vh;
             text-decoration: none;
-            border: .6vh solid yellow;
+            border: 0.6vh solid yellow;
             border-radius: 2vh;
 
             @include mq(small-landscape) {
@@ -173,14 +172,14 @@ body {
         a {
             @include button;
             color: #00f;
-            border: .5vh #00f solid;
+            border: 0.5vh #00f solid;
             text-decoration: none;
         }
     }
 }
 
-.error-registration-wrapper,
-.error-logging-wrapper {
+.error-sign-up-wrapper,
+.error-sign-in-wrapper {
     height: 4vh;
 
     p {
@@ -190,7 +189,6 @@ body {
     @include mq(small) {
         font-size: 2vh;
     }
-
 
     @include mq(small-landscape) {
         font-size: 3vh;
@@ -211,7 +209,7 @@ body {
         a {
             @include button;
             color: #00f;
-            border: .5vh #00f solid;
+            border: 0.5vh #00f solid;
             text-decoration: none;
         }
     }

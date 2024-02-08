@@ -1,22 +1,22 @@
 @font-face {
     font-family: anton;
-    src: url('../fonts/Anton/Anton-Regular.ttf');
+    src: url("../fonts/Anton/Anton-Regular.ttf");
 }
 
 .games-wallpaper {
     @include wallpaper;
-    background-image: url('../img/portrait/man_640.jpg');
+    background-image: url("../img/portrait/man_640.jpg");
 
     @include mq(xxsmall-landscape) {
-        background-image: url('../img/landscape/man_640.jpg');
+        background-image: url("../img/landscape/man_640.jpg");
     }
 
     @include mq(medium) {
-        background-image: url('../img/portrait/man_1280.jpg');
+        background-image: url("../img/portrait/man_1280.jpg");
     }
 
     @include mq(medium-landscape) {
-        background-image: url('../img/landscape/man_1280.jpg');
+        background-image: url("../img/landscape/man_1280.jpg");
     }
 }
 
@@ -66,7 +66,7 @@
                 font-weight: bolder;
                 text-decoration: none;
                 border: 1vh solid yellow;
-                transition: .2s;
+                transition: 0.2s;
 
                 &:hover {
                     box-shadow: -3vh 3vh 5vh red;
@@ -85,18 +85,18 @@
     }
 }
 
-.logout-wrapper {
+.sign-out-wrapper {
     a {
         @include button;
         text-decoration: none;
     }
 }
 
-.delete-account-wrapper {
+.unregister-wrapper {
     a {
         @include button;
         color: orangered;
-        border: .5vh orangered solid;
+        border: 0.5vh orangered solid;
         text-decoration: none;
     }
 }

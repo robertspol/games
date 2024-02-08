@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-if (isset($_SESSION['logged'])) {
-    header('Location: games.php');
+if (isset($_SESSION["login"])) {
+    header("Location: php/games.php");
     exit();
 }
 ?>
@@ -14,15 +14,15 @@ if (isset($_SESSION['logged'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gry - strona startowa</title>
-    <link rel="stylesheet" href="./css/index.min.css">
+    <link rel="stylesheet" href="css/index.min.css">
 </head>
 
 <body>
     <div class="wallpaper"></div>
 
     <section class="wrapper">
-        <form action="logging.php" method="post">
-            <div class="logging-wrapper">
+        <form action="php/actions/sign-in-action.php" method="POST">
+            <div class="sign-in-wrapper">
                 <label for="login">Wpisz nazwę użytkownika:</label>
                 <input id="login" type="text" name="login" placeholder="Nazwa użytkownika">
             </div>
@@ -32,25 +32,26 @@ if (isset($_SESSION['logged'])) {
                 <input id="password" type="password" name="password" placeholder="Hasło">
             </div>
 
-            <div class="error-logging-wrapper">
+            <div class="error-sign-in-wrapper">
                 <?php
-                if (isset($_SESSION['error'])) {
-                    echo $_SESSION['error'];
+                if (isset($_SESSION["error"])) {
+                    echo $_SESSION["error"];
+                    unset($_SESSION["error"]);
                 }
                 ?>
             </div>
 
-            <input class="submit-logging" type="submit" value="Zaloguj się">
+            <input class="sign-in-submit" type="submit" value="Zaloguj się">
         </form>
 
-        <div class="link-registration-wrapper">
-            <a href="registration.php">Załóż konto</a>
+        <div class="link-sign-up-wrapper">
+            <a href="php/sign-up.php">Załóż konto</a>
         </div>
 
         <h1 class="text">Zagraj w gry, w których liczy się szczęście, ale także ryzyko. Jeśli nie posiadasz konta, załóż je już teraz!</h1>
 
         <div class="info-wrapper">
-            <a href="info.php">Zasady gier</a>
+            <a href="php/info.php">Zasady gier</a>
         </div>
     </section>
 </body>
