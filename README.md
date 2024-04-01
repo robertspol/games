@@ -1,6 +1,6 @@
 # Gry
 
-Aplikacja stworzona w języku PHP i zawierająca 2 gry: Anioł czy diabeł oraz Kolorowa ruletka.
+Aplikacja stworzona w PHP i Javascript zawierająca 2 gry: Anioł czy diabeł oraz Kolorowa ruletka.
 
 ## Jak zacząć
 
