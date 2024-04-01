@@ -6,12 +6,13 @@ Aplikacja stworzona w języku PHP i zawierająca 2 gry: Anioł czy diabeł oraz 
 
 Aby uruchomić ten projekt na swoim lokalnym komputerze, wykonaj następujące kroki:
 
-1.Zainstaluj pakiet XAMPP na swoim komputerze.
-2.Uruchom plik xampp-control i włącz serwer Apache oraz MySQL.
-3.Pobierz katalog z projektem do folderu htdocs w katalogu, w którym zainstalowany został XAMPP`.
-4.Otwórz przeglądarkę internetową i przejdź do http://localhost/games, aby korzystać z aplikacji.
+1. Zainstaluj pakiet XAMPP na swoim komputerze.
+2. Uruchom plik xampp-control i włącz serwer Apache oraz MySQL.
+3. Pobierz katalog z projektem do folderu htdocs w katalogu, w którym zainstalowany został XAMPP`.
+4. Otwórz przeglądarkę internetową i przejdź do http://localhost/games, aby korzystać z aplikacji.
 
 ## Sposób użycia
+
 1. Uruchom aplikację.
 2. Utwórz nowe konto, wprowadzając wymagane dane.
 3. Zaloguj się na swoje konto.
