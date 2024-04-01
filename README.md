@@ -1,6 +1,6 @@
 # Gry
 
-Aplikacja zawierająca 2 gry: Anioł czy diabeł oraz Kolorowa ruletka.
+Aplikacja stworzona w języku PHP zawierająca 2 gry: Anioł czy diabeł oraz Kolorowa ruletka.
 
 ## Jak zacząć
 
