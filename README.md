@@ -8,7 +8,7 @@ Aby uruchomić ten projekt na swoim lokalnym komputerze, wykonaj następujące k
 
 1. Zainstaluj pakiet XAMPP na swoim komputerze.
 2. Uruchom plik xampp-control i włącz serwer Apache oraz MySQL.
-3. Pobierz katalog z projektem do folderu htdocs w katalogu, w którym zainstalowany został XAMPP`.
+3. Pobierz katalog z projektem do folderu htdocs w katalogu, w którym zainstalowany został XAMPP.
 4. Otwórz przeglądarkę internetową i przejdź do http://localhost/games, aby korzystać z aplikacji.
 
 ## Sposób użycia
